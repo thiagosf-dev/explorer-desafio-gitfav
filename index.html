@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap"
+		rel="stylesheet" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<script type="module" src="./js/main.js" defer></script>
+
+	<title>GitHub Favorites</title>
+</head>
+
+<body>
+	<div id="app">
+		<header>
+			<h1>
+				<img src="./assets/gitfav.svg"
+					alt="imagme de uma estrela fofinha com olhos esbugalhados e a boca aberta fazendo cara de espanto">
+			</h1>
+			<div class="search">
+				<label class="sr-only" for="input-search">Usuário do GitHub</label>
+				<input id="input-search" type="text" placeholder="Usuário do GitHub">
+				<button>
+					<img src="./assets/star.svg" alt="">
+					<span>Favoritar</span>
+				</button>
+			</div>
+		</header>
+
+		<!-- <div class="table-container"> -->
+		<table class="table-com-scrool">
+			<thead>
+				<tr>
+					<th>Usuário</th>
+					<th>Repositórios</th>
+					<th>Seguidores</th>
+					<th>Ação</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+			<tfoot class="no-users">
+				<tr>
+					<td colspan="4">
+						<div class="tfoot-content">
+							<img src="./assets/logo.svg" alt="">
+							<span>Nenhum favorito ainda</span>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<!-- </div>	 -->
+	</div>
+</body>
+
+</html>
